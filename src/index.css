@@ -1,0 +1,64 @@
+:root {
+  --text: #40374a;
+  --text-h: #120f17;
+  --bg: #f6f5f8;
+  --border: #d9d4df;
+  --code-bg: #ece7f2;
+  --accent: #7c3aed;
+  --social-bg: rgba(255, 255, 255, 0.9);
+  --shadow:
+    rgba(37, 22, 56, 0.08) 0 14px 30px -12px,
+    rgba(37, 22, 56, 0.06) 0 6px 14px -8px;
+
+  color-scheme: light;
+  font: 16px/1.5 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top, rgba(124, 58, 237, 0.1), transparent 35%),
+    var(--bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+
+h2 {
+  font-size: 1.125rem;
+}
+
+code {
+  display: inline-flex;
+  border-radius: 0.5rem;
+  background: var(--code-bg);
+  color: var(--text-h);
+  padding: 0.25rem 0.5rem;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.9375rem;
+}
